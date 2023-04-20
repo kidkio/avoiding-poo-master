@@ -17,16 +17,15 @@ pygame.display.set_caption("Avoiding poo")
 
 clock = pygame.time.Clock()
 
-#캐릭터 속도 설정
-character_speed = 0.5
-
-poo_speed = 1
-
 
 #종료 버튼 눌렀을 때 꺼지기
 running = True
 _running = True
 while _running:
+    #캐릭터 속도 설정
+    character_speed = 0.5
+    
+    poo_speed = 1
     #캐릭터 생성
     character = pygame.image.load("character.png")
     character_size = character.get_rect().size #이미지 사이즈 구하기
